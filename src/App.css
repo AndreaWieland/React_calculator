@@ -1,0 +1,137 @@
+@font-face{
+  font-family:'digital-7';
+  src: url('./digital-7.ttf');
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2 url('./blurdesk.jpg') no-repeat fixed center;
+  background-size: cover;
+}
+
+.calculator{
+  height: 65vh;
+  width: 42vh;
+  min-height: 421px;
+  min-width: 274px;
+  padding: 10%;
+  margin-top: 10vh;
+  background: rgb(151,217,255);
+  background: linear-gradient(145deg, rgba(151,217,255,1) 0%, rgba(62,178,247,1) 11%);  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 22px/22px;
+  box-shadow: 5px 5px 0px 0px #2774a1;
+  transform: rotateX(-10deg);
+  border-style: solid;
+  border-width: 2px;
+  border-left-color: #97d9ff;
+  border-top-color: #97d9ff;
+  border-bottom-color: #2774a1;
+  border-right-color: #2774a1;
+}
+
+.output-display{
+  width: 90%;
+  max-height: 4em;
+  padding: 0 .3em 0 .3em;
+  background-color: #AED2C0;
+  color: #012401;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 7px;
+  font-family: 'digital-7';
+  font-size: 2.25em;
+  line-height: 0;
+  overflow: hidden;
+  margin-top: .3em;
+  margin-bottom: .3em;
+  box-shadow: inset 3px 2px 2px 0px #8AA698;
+}
+
+/*
+width: 330px
+height:470px
+button:
+width: 57px
+height:41px
+big button:
+width: 121px
+height:32px
+*/
+
+.keypad {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-row-gap: 15px;
+  margin: auto;
+}
+
+.button{
+  box-shadow: 4px 2px 2px 0px #3598D4;
+  padding:0;
+  font-size: 1em;
+  background: rgb(222,222,225);
+  background: linear-gradient(90deg, rgba(222,222,225,1) 39%, rgba(200,200,200,1) 100%);
+  border-width:.25px;  
+  border-style:outset;
+  font-family: 'Barlow', sans-serif;
+  color: lightcoral;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  transition: all .15s;
+}
+
+button:focus{
+  outline: none;
+}
+
+.button:active{
+  box-shadow: 0px 0px 0px 0px #3598D4;
+  background: rgb(222,222,225);
+  background: linear-gradient(90deg, rgba(200,200,200,1) 39%, rgba(222,222,225,1) 100%);
+}
+
+.sml-btn{
+  width: 1.65em;
+  max-height: 2.7em;
+  border-radius: 5px/5px;
+  margin: auto;
+  border: none;
+  font-size: 2.2em;
+}
+
+.large-btn-1,.large-btn-2{
+  border-radius: 3px/3px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.large-btn-1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+}
+
+.large-btn-2{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.rainbow-text {
+  
+}
